@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Minecraft client archive.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="MCC Loader">
+    <meta property="og:description" content="A Minecraft client archive.">
+    <meta property="og:image" content="https://i.ibb.co/DGFbxyw/loader.jpg">
+    <meta property="og:url" content="https://mcc.is-cool.dev">
+    <meta property="og:type" content="website">
+    <meta http-equiv="Content-Security-Policy" content="img-src 'self' data: https://i.imgur.com https://i.pinimg.com;">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="assets/mcc.png">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="navbar">
+            <div class="navbar__container">
+                <div class="navbar__branding">
+					<a href="#">
+						<svg class="logo" src="assets/mcc.png"></svg>
+						<span>Minecraft Cheater Central</span>
+					</a>
+                </div>
+                <div class="navbar__items navbar__items--mobile">
+                    <a href="#" class="navbar__item">
+                        <label for="input-navbar">
+                            <i class="fas fa-bars"></i>
+                        </label>
+                    </a>
+                </div>
+                <input type="checkbox" id="input-navbar" style="display: none;">
+                <div class="navbar__items">
+                </div>
+            </div>
+        </nav>
+        <main class="main">
+            <div class="main__container">
+                <section class="section section--hero">
+                    <div class="clouds"></div>
+                    <div class="section__container">
+                        <div class="section__image" style="--image-url: url('assets/loader.jpg');">
+                        </div>
+                        <div class="section__content">
+                            <h1 class="section__heading">MCC Loader</h1>
+                            <p class="section__subheading">A Minecraft client archive</p>
+                            <div class="section__buttons">
+                                <a href="#section-about" class="button button--secondary">About</a>
+                                <a href="https://discord.gg/chiterl" class="button button--primary">Discord</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Other sections -->
+				<section class="section section--about" id="section-about">
+					<div class="section__container">
+						<div class="section__content">
+							<h2 class="section__heading">About us</h2>
+							<p class="section__description">
+								MCC Loader offers a suite of more than 500+ clients. Our free program is dedicated to elevating your experience with the best clients. Our service has been available for over 2 years without any issues.It's time to upgrade your Minecraft cheating experience!
+							</p>
+						</div>
+					</div>
+				</section>
+
+                <section class="section section--download" id="section-download">
+                    <div class="section__container">
+                        <div class="section__content">
+                            <h2 class="section__heading">Donwnload MCC Loader now</h2>
+                            <p class="section__description">
+                                Ready to take your experience to the next level on minecraft using cheats? MCC Loader is here to help ya out
+                            </p>
+                            <div class="section__buttons">
+                                <a href="https://discord.gg/chiterl" class="button button--primary">Discord</a>
+                                <a href="https://discord.gg/chiterl" class="button button--secondary">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+				
+            </div>
+        </main>
+    </div>
+</body>
+<script>
+function title() {
+    var titles = ["crafted by kuyo/spoofedotp", "mcc archive on top", "@spoofedotp", "love you"];
+    var index = 0;
+
+    function newtitle() {
+      document.title = titles[index];
+      index = (index + 1) % titles.length;
+    }
+
+    setInterval(newtitle, 100);
+  }
+
+  window.onload = title;
+</script>
+</html>
